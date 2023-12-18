@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="40sp"
+    android:background="@color/teal_700"
+    tools:context=".Login">
+
+    <EditText
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/email_et"
+        android:hint="Email"
+        android:paddingHorizontal="15sp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="60sp" />
+
+    <EditText
+        app:layout_constraintTop_toBottomOf="@id/email_et"
+        android:id="@+id/password_et"
+        android:hint="Password"
+        android:layout_marginTop="15sp"
+        android:paddingHorizontal="15sp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="60sp" />
+
+    <Button
+        app:layout_constraintTop_toBottomOf="@id/password_et"
+        android:id="@+id/login"
+        android:layout_marginTop="30sp"
+        android:text="login"
+        android:layout_width="match_parent"
+        android:layout_height="70sp" />
+
+    <Button
+        app:layout_constraintTop_toBottomOf="@id/login"
+        android:id="@+id/signup"
+        android:backgroundTint="@color/teal_200"
+        android:layout_marginTop="5sp"
+        android:text="signup"
+        android:layout_width="match_parent"
+        android:layout_height="70sp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
